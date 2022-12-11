@@ -41,7 +41,7 @@ $comments = htmlspecialchars($comments);
 // Enter the email address that you want to emails to be sent to.
 
 //$address = "example@youremail.net";
-$address = "clapatform@gmail.com";
+$address = "santtu@luomassa.fi";
 
 
 // Configuration option.
@@ -49,7 +49,7 @@ $address = "clapatform@gmail.com";
 
 // Example, $e_subject = '$name . ' has contacted you via Your Website.';
 
-$e_subject = 'You\'ve been contacted by ' . $name . '.';
+$e_subject = 'Uusi yhteydenotto verkkosivuilta ' . $name . '.';
 
 
 // Configuration option.
@@ -74,7 +74,7 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
 	echo "<fieldset>";
 	echo "<div id='success_page'>";
-	echo "<h3>Email Sent Successfully.</h3>";
+	echo "<h3>Yhteydenotto vastaanotettu onnistuneesti.</h3>";
 	echo "<p>Thank you <strong>$name</strong>, your message has been submitted to us.</p>";
 	echo "</div>";
 	echo "</fieldset>";
